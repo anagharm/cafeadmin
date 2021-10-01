@@ -1,0 +1,74 @@
+.signOuterDiv{
+    padding: 2%;
+    height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.formSign{
+    display: flex;
+    flex-direction: row;
+    height: 7vh;
+    padding-left: 10%;
+    padding-bottom: 1%;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+    justify-content:center;
+    color: white;
+    width: 40vw;
+}
+
+.formSign .formSingleElement{
+    flex-basis: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 1%;
+    margin-bottom: 10%;
+}
+
+.formSign .formSingleElementLabel{
+    display: none;
+}
+
+.formSign .formSingleElementField{
+    flex-basis: 80%;
+    width: 100%;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background-color: transparent;
+    border-bottom: 1px solid white;
+    color: white;
+    /* margin-bottom: 8%; */
+}
+
+.formSign .formSingleElementField:focus{
+    outline: none;
+}
+
+.signSubmitDiv{
+    color: white;
+}
+.signSubmit{
+    float: right;
+    color: white;
+}
+
+.submitButton{
+    color : white;
+    font-size: 1.2rem;
+    /* background: 1px soild cadetblue; */
+}
+
+.formSign ::placeholder {
+    color:white;
+    font-weight: 100;
+    opacity: 1; /* Firefox */
+}
+
+.signSubmit:active{
+    outline: none;
+    border: 1px solid cadetblue;
+}

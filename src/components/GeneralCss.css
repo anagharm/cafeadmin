@@ -1,0 +1,126 @@
+.formOuterDiv{
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    min-height: 70vh;
+    padding-left: 3%;
+    padding-top: 1%;
+}
+
+.form2RowDiv{
+    display: flex;
+    flex-direction: row;
+    height: 7vh;
+    padding-left: 10%;
+    padding-bottom: 1%;
+    padding-top: 1%;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+    justify-content:flex-start;
+}
+
+.form2RowDiv .formSingleElement{
+    flex-basis: 40%;
+    display: flex;
+    flex-direction: row;
+    margin-right: 1%;
+    margin-bottom: 1%;
+}
+
+.form2RowDiv .formSingleElementLabel{
+    flex-basis: 30%;
+    font-weight: bold;
+    padding-top: 1%;
+    margin-right: 1%;
+    /* border: 1px solid yellowgreen; */
+}
+
+.form2RowDiv .formSingleElementField{
+    flex-basis: 67%;
+    height: 40px;
+    /* border: 1px solid yellowgreen; */
+}
+
+.form1RowDiv{
+    display: flex;
+    flex-direction: row;
+    height: 7vh;
+    padding-left: 10%;
+    padding-bottom: 1%;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+    justify-content:flex-start;
+}
+
+.form1RowDiv .formSingleElement{
+    flex-basis: 80%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 1%;
+    
+}
+
+.form1RowDiv .formSingleElementLabel{
+    /* flex-basis: 80%; */
+    font-weight: bold;
+    margin-right: 1%;
+    height: 6vh;
+    /* border: 1px solid yellowgreen; */
+}
+
+.form1RowDiv .formSingleElementField{
+    /* flex-basis: 80%; */
+    height: 40px;
+    width: 100%;
+    /* border: 1px solid yellowgreen; */
+}
+
+.submitButtonDiv{
+    border-top: 1px solid #bfdcec;
+    padding-top: 2%;
+    text-align: right;
+    margin-right: 4%;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-top: 1%;
+}
+
+
+.singleFieldForm{
+    font-size: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 3%;
+    padding-top: 1%;
+    border-bottom: 1px solid #bfdcec;
+}
+
+.singleFieldForm .formSingleElement{
+    flex-basis: 80%;
+    display: flex;
+    flex-direction: row;
+    margin-right: 1%;
+    height: 8vh;
+    
+}
+
+.singleFieldForm .formSingleElementLabel{
+    font-weight: bold;
+    margin-right: 1%;
+    padding-top: 1%;
+    width: 20vh;
+}
+
+.singleFieldForm .formSingleElementField{
+    width: 90vh;
+    height: 6vh;
+    /* border: 1px solid yellowgreen; */
+}
+
+.singleFieldForm button{
+    width: 7vw;
+    height: 6vh;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
