@@ -12,7 +12,7 @@ function RadioButtons(props) {
                         return options.map(option => {
                             return(
                                 <React.Fragment key={option.key}>
-                                    <input className="col-sm-3"
+                                    <input className="formSingleElementLabel"
                                         type="radio" 
                                         id={option.value}
                                         {...field} 

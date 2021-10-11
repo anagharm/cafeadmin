@@ -25,11 +25,11 @@ function Role() {
     }
     const mutation = useMutation((params) => Fetcher('post', '/api/role/post/addrole', params), {
         onSuccess(data) {
-            if (data.data.errorCode === 0) {
+            if (data.data.responseCode === 0) {
                 ToastInstance('Success', 'Role Added')
                 queryClient.invalidateQueries('listrole');
             } else {
-                var msg = 'Role - ' + data.data.errorMsg;
+                var msg = 'Role - ' + data.data.responseMsg;
                 ToastInstance('Error', msg)
             }
         },
@@ -40,12 +40,12 @@ function Role() {
     })
     const mutationEdit = useMutation((params) => Fetcher('patch', '/api/role/patch/role', params), {
         onSuccess(data) {
-            if (data.data.errorCode === 0) {
+            if (data.data.responseCode === 0) {
                 ToastInstance('Success', 'Role Edited')
                 queryClient.invalidateQueries('listrole');
                 setInitialValues({ id: "", role: "" })
             } else {
-                var msg = 'Role - ' + data.data.errorMsg;
+                var msg = 'Role - ' + data.data.responseMsg;
                 ToastInstance('Error', msg)
             }
         },
@@ -56,11 +56,11 @@ function Role() {
     })
     const mutationDelete = useMutation((params) => Fetcher('delete', '/api/role/delete/role', params), {
         onSuccess(data) {
-            if (data.data.errorCode === 0) {
+            if (data.data.responseCode === 0) {
                 ToastInstance('Success', 'Role Deleted')
                 queryClient.invalidateQueries('listrole');
             } else {
-                var msg = 'Role - ' + data.data.errorMsg;
+                var msg = 'Role - ' + data.data.responseMsg;
                 ToastInstance('Error', msg)
             }
         },
@@ -93,8 +93,10 @@ function Role() {
                 {
                     formik =>   <Form>
                                     <div className="formOuterDiv">
-                                        <div className="singleFieldForm"> 
-                                            <FormikControl control='input' type='text' label='Role' name='role' placeholder="Role" />                                        
+                                        <div className="form1RowDiv"> 
+                                            <FormikControl control='input' type='text' label='Role' name='role' placeholder="Role" />  
+                                        </div>
+                                        <div className="submitButtonDiv">
                                             <button type="submit" className="btn btn-primary" disabled={!formik.isValid}>Submit</button>
                                         </div>
                                         <div style={{border:"1px solid red", marginTop:"1%"}}>

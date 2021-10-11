@@ -10,12 +10,19 @@ function DatePicker(props) {
     return (
         <div className="formSingleElement">
             <label className="formSingleElementLabel" htmlFor={name}><strong>{label}</strong></label>
-            <Field  name={name} className="formSingleElementField">
+            <Field  name={name}>
                 {
                     ({form, field}) => {
                         const { setFieldValue } = form
                         const { value } = field
-                        return <DateView  id={name} {...field} {...rest} selected={value} onChange={val => setFieldValue(name,val)}/>
+                        return <DateView  
+                                        id={name} 
+                                        {...field} 
+                                        {...rest} 
+                                        selected={value} 
+                                        onChange={val => setFieldValue(name,val)} 
+                                        className="formSingleElementField"
+                                />
                     }
                 }
             </Field>

@@ -7,6 +7,7 @@ import Select from './Select'
 import Textarea from './Textarea'
 import FileUpload from './FileUpload'
 import RadioButtons from './RadioButtons'
+import ShowData from './ShowData'
 
 function FormikControl(props) {
     const { control, ...rest } = props
@@ -25,6 +26,8 @@ function FormikControl(props) {
             return <DatePicker {...rest} />
         case 'file'         :
             return <FileUpload {...rest} />
+        case 'showdata'     :
+            return <ShowData {...rest} />
         default             :
             return null
     }

@@ -7,25 +7,6 @@ import * as CgIcons from 'react-icons/cg';
 
 export const SidebarData = [
   {
-    title: 'Discount Mgmt',
-    // path: '/userlist',
-    icon: <BsIcons.BsFilePlus />,
-    iconClosed: <RiIcons.RiArrowDownSFill />,
-    iconOpened: <RiIcons.RiArrowUpSFill />,
-    subNav: [
-      {
-        title: 'New',
-        path: '/commingsoon',
-        icon: <FiIcons.FiFile />
-      },
-      {
-        title: 'List of Discounts',
-        path: '/commingsoon',
-        icon: <FiIcons.FiFile />
-      }
-    ]
-  },
-  {
     title: 'Receipt Mgmt',
     // path: '/userlist',
     icon: <BsIcons.BsFilePlus />,
@@ -73,6 +54,25 @@ export const SidebarData = [
       {
         title: 'List of Menu',
         path: '/admin/menulist',
+        icon: <FiIcons.FiFile />
+      }
+    ]
+  },
+  {
+    title: 'Discount Mgmt',
+    // path: '/userlist',
+    icon: <BsIcons.BsFilePlus />,
+    iconClosed: <RiIcons.RiArrowDownSFill />,
+    iconOpened: <RiIcons.RiArrowUpSFill />,
+    subNav: [
+      {
+        title: 'New',
+        path: '/admin/discount',
+        icon: <FiIcons.FiFile />
+      },
+      {
+        title: 'List of Discounts',
+        path: '/admin/discountlist',
         icon: <FiIcons.FiFile />
       }
     ]

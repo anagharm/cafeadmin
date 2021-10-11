@@ -2,20 +2,21 @@ import React from 'react';
 
 export const COLUMNS_USER =[
     {
-        Header              : 'User Code',
-        accessor            : 'userCode',
-        Cell                : e=><div className="text-center"><a href={'/admin/user/view/'+e.value}> {e.value} </a></div>
-    },
-    {
         Header              : 'User Name',
-        accessor            : 'userName'
+        accessor            : 'name',
+        Cell                : e=><div><a href={'/admin/user/view/'+(e.value).split("-")[1]}> {(e.value).split("-")[0]} </a></div>
     },
     {
         Header              : 'Email',
-        accessor            : 'emailId'
+        accessor            : 'emails'
     },
     {
         Header              : 'Mobile Number',
-        accessor            : 'mobNum',
+        accessor            : 'mobileNum',
+    },
+
+    {
+        Header              : 'Role',
+        accessor            : 'role',
     },
 ]
