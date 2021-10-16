@@ -22,7 +22,7 @@ function ViewMenu() {
     return (
         <div className="viewData">
             <div className="imgDiv">
-                <img src="https://i.pinimg.com/564x/c9/3f/24/c93f245aa6c85b1b3bf5e2163c6b1405.jpg" width="60%" />
+                <img src="https://i.pinimg.com/564x/c9/3f/24/c93f245aa6c85b1b3bf5e2163c6b1405.jpg" width="60%" alt="Menu"/>
             </div>
             <div className="infoDiv">
                 <div className="formOuterDiv">
@@ -33,12 +33,13 @@ function ViewMenu() {
                         <FormikControl control="showdata" label="Description" value={menu.data.response.description}/>
                     </div>
                     <div className="form2RowDiv">
-                        <FormikControl control="showdata" label="Price" value={menu.data.response.price}/>
+                        <FormikControl control="showdata" label="Small Price" value={menu.data.response.smallPrice}/>
+                        <FormikControl control="showdata" label="Medium Price" value={menu.data.response.mediumPrice}/>
+                    </div>
+                    <div className="form2RowDiv">
+                        <FormikControl control="showdata" label="Large Price" value={menu.data.response.largePrice}/>
                         <FormikControl control="showdata" label="Is Available" value={menu.data.response.available ? "Is Available" : "Not Available"}/>
                     </div>
-                    {/* <div className="form2RowDiv">
-                        <FormikControl control="showdata" label="Gender" value={(menu.data.response.gender).replace(/^\w/, c => c.toUpperCase())}/>
-                    </div> */}
                     <div className="viewEditButton">
                         <button className="btn btn-info" onClick={() => editMenuInfo()}>Edit</button>
                     </div>

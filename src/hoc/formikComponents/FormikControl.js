@@ -8,6 +8,7 @@ import Textarea from './Textarea'
 import FileUpload from './FileUpload'
 import RadioButtons from './RadioButtons'
 import ShowData from './ShowData'
+import FieldArrayMenu from './FieldArrayMenu'
 
 function FormikControl(props) {
     const { control, ...rest } = props
@@ -28,6 +29,8 @@ function FormikControl(props) {
             return <FileUpload {...rest} />
         case 'showdata'     :
             return <ShowData {...rest} />
+        case 'addmenu'      :
+            return <FieldArrayMenu {...rest} />
         default             :
             return null
     }

@@ -1,9 +1,8 @@
-import React, { Component } from 'react';  
+import React from 'react';  
 import { Route } from 'react-router-dom';  
 import './AuthCss.css'
 
 const AuthLayout = ({ children }) => {   
-  var componentData = {children}
     return(
       <div className="authLayout"> 
         {children}

@@ -23,7 +23,7 @@ function ViewDiscount() {
     return (
         <div className="viewData">
             <div className="imgDiv">
-                <img src="https://banner2.cleanpng.com/20171127/f77/blue-discount-cube-transparent-png-clip-art-image-5a1bc4666e4248.2116458315117691904516.jpg" width="60%" />
+                <img src="https://banner2.cleanpng.com/20171127/f77/blue-discount-cube-transparent-png-clip-art-image-5a1bc4666e4248.2116458315117691904516.jpg" alt="Discount" width="60%" />
             </div>
             <div className="infoDiv">
                 <div className="formOuterDiv">

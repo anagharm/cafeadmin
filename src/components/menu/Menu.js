@@ -14,16 +14,20 @@ function Menu() {
     const {menucode} = useParams();
     console.log("menucode ",menucode)
     const [initialValues, setInitialValues] = useState({ 
-                                                            _id         : "", 
-                                                            menu        : "",
-                                                            description	: "",
-                                                            price  		: 0,
-                                                            available   : true,
+                                                            _id                 : "", 
+                                                            menu                : "",
+                                                            description	        : "",
+                                                            smallPrice  		: 0,
+                                                            mediumPrice  		: 0,
+                                                            largePrice  		: 0,
+                                                            available           : true,
                                                         })
     const validationSchema = Yup.object({
         menu        : Yup.string().required('Required!!'),
         description	: Yup.string().required('Required!!'),
-        price  		: Yup.number().required('Required!!'),
+        smallPrice	: Yup.number().required('Required!!'),
+        mediumPrice : Yup.number().required('Required!!'),
+        largePrice  : Yup.number().required('Required!!'),
         available   : Yup.boolean().required('Required'),
     })
 
@@ -101,7 +105,11 @@ function Menu() {
                                             <FormikControl control='textarea' type='text' label='Description' name='description' placeholder="Description of the Dish" />                                        
                                         </div>
                                         <div className="form2RowDiv"> 
-                                            <FormikControl control='input' type='number' label='Price' name='price' placeholder="Price" />                                        
+                                            <FormikControl control='input' type='number' label='Small Price' name='smallPrice' placeholder="Price for Small" />                                        
+                                            <FormikControl control='input' type='number' label='Medium Price' name='mediumPrice' placeholder="Price for Medium" />                                        
+                                        </div>
+                                        <div className="form2RowDiv"> 
+                                            <FormikControl control='input' type='number' label='Price' name='largePrice' placeholder="Price for Large" />                                        
                                             <FormikControl control='select' label='Is Available' name='available' options={availableOptions}/>                                        
                                         </div>
                                         <div className="submitButtonDiv">

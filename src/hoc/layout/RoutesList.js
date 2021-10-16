@@ -20,6 +20,9 @@ import ViewMenu from '../../components/menu/ViewMenu';
 import Discount from '../../components/discount/Discount';
 import ListOfDiscount from '../../components/discount/ListOfDiscount';
 import ViewDiscount from '../../components/discount/ViewDiscount';
+import Order from '../../components/order/Order';
+import ListOfOrder from '../../components/order/ListOfOrder';
+import viewOrder from '../../components/order/viewOrder';
 
 export default class RoutesList extends Component {
     render() {
@@ -48,6 +51,11 @@ export default class RoutesList extends Component {
                     <AdminLayoutRoute exact path="/admin/discount/:discountcode" title="Discount" component={Discount}/>
                     <AdminLayoutRoute exact path="/admin/discountlist" title="List of Discount" component={ListOfDiscount}/>
                     <AdminLayoutRoute exact path="/admin/discount/view/:discountcode" title="Discount Information" component={ViewDiscount}/>
+
+                    <AdminLayoutRoute exact path="/admin/order" title="Place Order" component={Order}/>
+                    <AdminLayoutRoute exact path="/admin/order/:ordercode" title="Edit Order" component={Order}/>
+                    <AdminLayoutRoute exact path="/admin/orderlist" title="List of Orders" component={ListOfOrder}/>
+                    <AdminLayoutRoute exact path="/admin/order/view/:ordercode" title="Order Information" component={viewOrder}/>
 
                     <AuthLayoutRoute exact path="/signin" component={SignIn}/>
                     <AuthLayoutRoute exact path="/signup" component={SignUp}/>

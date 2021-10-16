@@ -23,7 +23,7 @@ function ViewUser() {
     return (
         <div className="viewData">
             <div className="imgDiv">
-                <img src="https://www.carrycargo.com/wp-content/uploads/2018/10/user_dummy.jpg" width="60%" />
+                <img src="https://www.carrycargo.com/wp-content/uploads/2018/10/user_dummy.jpg" width="60%"  alt="User Profile"/>
             </div>
             <div className="infoDiv">
                 <div className="formOuterDiv">

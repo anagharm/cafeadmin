@@ -26,7 +26,7 @@ function SignIn() {
 		onSuccess(data){
 			console.log('Got response from backend',data)
             if(data.data.responseCode === 0){
-                ToastInstance('Success','User Registered')
+                ToastInstance('Success','User Loged In')
                 history.push('/commingsoon');
             }else{
                 var msg = 'User Not Registered - ' + data.data.responseMsg;

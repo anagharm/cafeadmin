@@ -31,7 +31,7 @@
 .form2RowDiv .formSingleElementLabel{
     font-weight: bold;
     margin-right: 1%;
-    margin-bottom: 1%;
+    /* margin-bottom: 1%; */
 }
 
 .form2RowDiv .formSingleElementField{

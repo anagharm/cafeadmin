@@ -1,9 +1,7 @@
 import React from 'react';
 import * as FiIcons from 'react-icons/fi';
 import * as BsIcons from 'react-icons/bs';
-import * as IoIcons from 'react-icons/io';
 import * as RiIcons from 'react-icons/ri';
-import * as CgIcons from 'react-icons/cg';
 
 export const SidebarData = [
   {
@@ -22,19 +20,18 @@ export const SidebarData = [
   },
   {
     title: 'Order Mgmt',
-    // path: '/userlist',
     icon: <BsIcons.BsFilePlus />,
     iconClosed: <RiIcons.RiArrowDownSFill />,
     iconOpened: <RiIcons.RiArrowUpSFill />,
     subNav: [
       {
         title: 'Place Order',
-        path: '/commingsoon',
+        path: '/admin/order',
         icon: <FiIcons.FiFile />
       },
       {
         title: 'List of Orders',
-        path: '/commingsoon',
+        path: '/admin/orderlist',
         icon: <FiIcons.FiFile />
       }
     ]

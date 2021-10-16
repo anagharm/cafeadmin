@@ -1,5 +1,5 @@
 import React, { useMemo } from 'react'
-import { useTable, useGlobalFilter, useFilters, useSortBy, usePagination, useRowSelect } from 'react-table'
+import { useTable, useGlobalFilter, useFilters, useSortBy, useRowSelect } from 'react-table'
 import { ColumnFilter } from './ColumnFilter'
 import './TableCss.css'
 
